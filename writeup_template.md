@@ -109,11 +109,13 @@ model.compile(loss='mse', optimizer='adam', lr=0.0001)
 
 To capture good driving behaviour, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
+![alt text](https://github.com/TheAisBack/CarND-Behavioral-Cloning-P3/blob/master/center-image.jpg "Center Image")
+
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to correct itself. But mainly stayed on the center of the track. I completed 5 laps with the car staying center most of the track.
 
-Here is an image of the car being focused to the center of the track
+Here is an example of three images from left, center and right. Majority of my driving was focused to stay centered and with the model.py, the car made sure to stay perfectly center even with tough turns.
 
-![alt text](https://github.com/TheAisBack/CarND-Behavioral-Cloning-P3/blob/master/center-image.jpg "Center Image")
+![alt text](https://github.com/TheAisBack/CarND-Behavioral-Cloning-P3/blob/master/left1.jpg "Left Image")![alt text](https://github.com/TheAisBack/CarND-Behavioral-Cloning-P3/blob/master/center1.jpg "Center Image")![alt text](https://github.com/TheAisBack/CarND-Behavioral-Cloning-P3/blob/master/right1.jpg "Right Image")
 
 To augment the data sat, I also flipped images and angles thinking that this would help if the track came up to random objects that could affect the car to react differently.
 
