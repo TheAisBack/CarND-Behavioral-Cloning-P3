@@ -121,4 +121,4 @@ To augment the data sat, I also flipped images and angles thinking that this wou
 
 After the collection process, I had 7197 images of each point of the camera. I then pre-processed this data by looping through the images and appended them to the right location.
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 25, it was helpful to filter through this amount especially with a GPU to get the correct data. I used an adam optimizer, but manually entering a learning rate helped to perfect the model.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 25, it was helpful to filter through this amount especially with a GPU to get the correct data. I used an adam optimizer because of it being the best tool for CNN architecture and a fast convergence, but manually entered a learning rate at 0.0001, instead of the 0.001, this helped to perfect the model.
