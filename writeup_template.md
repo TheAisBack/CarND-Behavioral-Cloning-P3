@@ -1,11 +1,11 @@
-#**Behavioral Cloning** 
+#**Behavioural Cloning** 
 
-##Writeup
+##Write-up
 
-**Behavioral Cloning Project**
+**Behavioural Cloning Project**
 
 The goals / steps of this project are the following:
-* Use the simulator to collect data of good driving behavior
+* Use the simulator to collect data of good driving behaviour
 * Build, a convolution neural network in Keras that predicts steering angles from images
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one without leaving the road
@@ -51,7 +51,7 @@ My model consists of the CNN architecture.
 
 ####2. Attempts to reduce overfitting in the model
 
-the model does use dropout layers mentioned above, an approipriate amount has been used to help with overfitting. Trained with enough data to help the car not to go over the track or hit the track.
+the model does use dropout layers mentioned above, an appropriate amount has been used to help with overfitting. Trained with enough data to help the car not to go over the track or hit the track.
 
 ####3. Model parameter tuning
 
@@ -65,13 +65,13 @@ The data collected was 5 laps of me driving as perfect as I could in the center 
 
 ####1. Solution Design Approach
 
-The overall strategy for deriving a model architecture was to follow with the recommended model of NVIDA approved of.
+The overall strategy for deriving model architecture was to follow with the recommended model of NVIDIA approved of.
 
-My first step was to use a convolution neural network model similar to the CNN archtitecture or NVIDA, I thought this model might be appropriate because recommnedations, how many layers it uses and the approriate amount to get the perfect amount of data.
+My first step was to use a convolution neural network model similar to the CNN architecture or NVIDIA, I thought this model might be appropriate because recommendations, how many layers it uses and the appropriate amount to get the perfect amount of data.
 
 In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I also flipped the images to help the car make sure that it was on the right lane.
 
-To combat the overfitting, I modified the model so that it had dropouts at the the approporaiate stages.
+To combat the overfitting, I modified the model so that it had dropouts at the the appropriate stages.
 
 Then I used a learning rate of 0.0001, collected enough data and made sure each image was rent to the right 'camera angle' for the proper calculation.
 
@@ -107,12 +107,12 @@ model.compile(loss='mse', optimizer='adam', lr=0.0001)
 
 ####3. Creation of the Training Set & Training Process
 
-To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
+To capture good driving behaviour, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to correct itself. But mainly stayed on the center of the track. I completed 5 laps with the car staying center most of the track.
 
-To augment the data sat, I also flipped images and angles thinking that this would help if the track came up to occucusions that could affect the car to react differently.
+To augment the data sat, I also flipped images and angles thinking that this would help if the track came up to random objects that could affect the car to react differently.
 
-After the collection process, I had 7197 images of each point of the camera. I then preprocessed this data by looping through the images and appended them to the right location.
+After the collection process, I had 7197 images of each point of the camera. I then pre-processed this data by looping through the images and appended them to the right location.
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 25, it was helpful to filter through this amount espiceially with a GPU to get the correct data. I used an adam optimizer, but manually entering a learning rate helped to perfect the model.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 25, it was helpful to filter through this amount especially with a GPU to get the correct data. I used an adam optimizer, but manually entering a learning rate helped to perfect the model.
