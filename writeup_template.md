@@ -111,6 +111,10 @@ To capture good driving behaviour, I first recorded two laps on track one using 
 
 I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to correct itself. But mainly stayed on the center of the track. I completed 5 laps with the car staying center most of the track.
 
+Here is an image of the car being focused to the center of the track
+![alt text][center-image.jps]
+
+
 To augment the data sat, I also flipped images and angles thinking that this would help if the track came up to random objects that could affect the car to react differently.
 
 After the collection process, I had 7197 images of each point of the camera. I then pre-processed this data by looping through the images and appended them to the right location.
