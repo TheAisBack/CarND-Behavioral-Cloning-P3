@@ -113,6 +113,7 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 Here is an image of the car being focused to the center of the track
 ![alt text][center-image.jpg]
+![alt text](https://github.com/TheAisBack/CarND-Behavioral-Cloning-P3/center-image.jpg "Center Image")
 
 
 To augment the data sat, I also flipped images and angles thinking that this would help if the track came up to random objects that could affect the car to react differently.
